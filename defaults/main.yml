@@ -1,0 +1,8 @@
+---
+
+git_rerere: ~
+git_protocol_map:
+  - url: ssh://git@github.com
+    instead_of: git://github.com
+  - url: https://
+    instead_of: http://

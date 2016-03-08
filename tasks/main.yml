@@ -1,0 +1,5 @@
+---
+# tasks file for slv.git
+
+- include: install//{{ ansible_os_family }}.yml
+- include: configure.yml

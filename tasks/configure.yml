@@ -1,0 +1,7 @@
+---
+
+- name: config git system
+  template:
+    src: etc/gitconfig.j2
+    dest: /etc/gitconfig
+    mode: 0644

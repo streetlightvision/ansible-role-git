@@ -1,0 +1,8 @@
+{% for m in git_protocol_map %}
+[url "{{ m.url }}"]
+    insteadOf = {{ m.instead_of }}
+{% endfor %}
+
+[rerere]
+    autoupdate = true
+    enabled = {{ 'true' if git_rerere else 'false' }}

@@ -6,3 +6,8 @@
 [rerere]
     autoupdate = true
     enabled = {{ 'true' if git_rerere else 'false' }}
+
+[alias]
+{% for alias in git_aliases %}
+    {{ alias }}
+{% endfor %}
